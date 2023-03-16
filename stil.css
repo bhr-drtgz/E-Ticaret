@@ -97,7 +97,18 @@ header h1 {
 
 }
 
-.productList {}
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+@media (max-width:700px) {
+    .productList {
+        justify-content: center;
+    }
+}
 
 .product {
     max-width: 250px;
@@ -132,8 +143,82 @@ header h1 {
 .productInfo span {}
 
 .productInfo button {
-    background-color: aqua;
+    background-color: yellow;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    padding: 5px;
+}
+
+.modalWrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(141, 140, 140, 0.300);
+    position: fixed;
+    top: 0;
+    display: none;
+    place-items: center;
+}
+
+.modal {
+    position: relative;
+    width: 30vw;
+    height: 70vh;
+    background-color: yellow;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.modal img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.active {
+    display: grid;
+}
+
+.sepetItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px black;
+    font-size: 10px;
+}
+
+.sepetItem h3 {
+    color: green;
+}
+
+#modalList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    overflow: auto;
+    padding: 20px;
+    margin-bottom: 50px;
+
+}
+
+.sepetTitle {
+    position: absolute;
+    right: 50%;
+    color: blue;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.toplam {
+    color: green;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
 }

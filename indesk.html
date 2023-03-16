@@ -14,7 +14,7 @@
     <h1>E-TİCARET</h1>
     <input type="text" placeholder="Ürün İsmi Giriniz">
     <div class="buttons">
-        <button class="sepet">SEPET</button>
+        <button id="SEPET" class="sepet">SEPET</button>
         <button class="kayıtol">KAYIT OL</button>
         <button class="giriş">GİRİŞ YAP</button>
     </div>
@@ -27,25 +27,28 @@
         </div>
     </div>
     </div>
-</main>
-
-<div class="productWrapper">
-    <h1>Ürünler</h1>
-    <div class="productList">
-        <div class="product">
-            <img src="https://fotolifeakademi.com/uploads/2020/04/manzara-ve-doga-fotografciligi.jpg" alt="">
-            <p>xxxxxx</p>
-            <p>yyyyyy</p>
-            <div class="productInfo">
-                <span>
-                    900$
-                </span>
-                <button>
-                    Sepete Ekle
-                </button>
+    <div class="productWrapper">
+        <h1>Ürünler</h1>
+        <div class="productList">
+            <div class="product">
             </div>
         </div>
     </div>
+    <div class="modalWrapper ">
+        <div class="modal">
+            <img id="close" src="./images//close.png">
+            <div class="sepetTitle">
+                <span>SEPET</span>
+
+            </div>
+            <div id="modalList">
+
+            </div>
+            <p class="toplam">Toplam: <span id="fiyat">500</span>$</p>
+         </div>
+    </div>
+</main>
+
 </div>
 
 <body>
